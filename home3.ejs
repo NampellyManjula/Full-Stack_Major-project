@@ -1,0 +1,77 @@
+<html>
+		<head>
+			<title>Book store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 200px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:blueviolet;font-weight:500;">Bookaholic</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://cdn.fcglcdn.com/brainbees/images/products/438x531/3533780a.webp"/>
+						<b><br>365 Bedtime stories</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1060/-"><del><small>1500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="365 Bedtime stories">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://thumbs.dreamstime.com/b/storybook-image-nature-fairy-illustration-white-background-32202332.jpg">
+						<b><br>Storybook</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="800/-"><del><small>1350/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="StoryBook">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/61Uws6h1qJL.jpg" >
+						<b><br>Jataka Tales</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="899/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Jataka Tales">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://kbimages1-a.akamaihd.net/db340a3c-ce4d-4ffa-b759-3ced60658a18/1200/1200/False/tenali-ramakrishna.jpg">
+						<b><br>Tenali Rama</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="699/-"><del><small>900/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Tenali Rama">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/91NIl1MArhL.jpg">
+						<b><br>365 Bible Stories</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="649/-"><del><small>800/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="365 Bible Stories">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/51qSftmeEgL._SX323_BO1,204,203,200_.jpg">
+						<b><br>The magic of the lost temple</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="749/-"><del><small>850/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The magic of the lost temple">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://i.ytimg.com/vi/NAFRsJMdSJU/maxresdefault.jpg" >
+						<b><br>The Magic Horse</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="700/-"><del><small>870/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The magic Horse">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://www.splashlearn.com/blog/wp-content/uploads/2021/09/Snow-white.jpg">
+						<b><br>Fairy Tales</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>990/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Fairy Tales">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/71SlCNQRinL.jpg">
+						<b><br>A first book of fairy tales</b><br>
+						<form action="add_k_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="899/-"><del><small>1200/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="A first book of fairy tales">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>
