@@ -1,0 +1,78 @@
+<html>
+		<head>
+			<title>Book store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 200px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:blueviolet;font-weight:500;">Bookaholic</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+                <div class="row">
+                	<div class = "col-lg-4 col-md-6 col-sm-12 "><img class ="img rounded" src="https://cdn.exoticindia.com/images/products/thumbnails/t800x600/books/nad434.jpg" 
+						<b><br>365 Tales from Indian Mythology</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="860/-"><del><small>1500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="365 Tales from Indian Mythology">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Kalki_Avatar_by_Ravi_Varma.jpg" >
+						<b><br>Kalki</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="700/-"><del><small>1350/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Kalki">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/51ZN0mecG2L._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_PIStarRatingFOURANDHALF%2CBottomLeft%2C360%2C-6_SR600%2C315_ZA138%2C445%2C290%2C400%2C400%2CAmazonEmberBold%2C12%2C4%2C0%2C0%2C5_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg" >
+						<b><br>Mortal Vishnu</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="999/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Mortal Vishnu">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://cdn2.vectorstock.com/i/1000x1000/05/06/raavan-dahan-for-dusshera-celebration-vector-10820506.jpg">
+						<b><br>Raavan</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>900/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Raavan">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/81ewEA-Aa0L.SR160,240_BG243,243,243.jpg" >
+						<b><br>Usha Narayan</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="649/-"><del><small>800/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Usha Narayan">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/71YaLkq7vwL.jpg" >
+						<b><br>Jaya</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>850/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Jaya">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://asiasociety.org/sites/default/files/styles/1200w/public/R/ramayana.jpg" >
+						<b><br>Ramayana</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="800/-"><del><small>870/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Ramayana">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/813qljvEsxL.jpg">
+						<b><br>365 Tales of Hanuman</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>990/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="365 Tales of Hanuman">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/51YtLzIK6lL._AC_SY780_.jpg">
+						<b><br>The Mahabharata Secret</b><br>
+						<form action="add_myth_ToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="999/-"><del><small>1200/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Mahabharata Secret">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="/Home2" method="GET">
+					<le><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="Next Genre"></center>
+				  </form><br><br>
+            </div>
+		</body>
+
+</html>
